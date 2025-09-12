@@ -1,0 +1,17 @@
+<div class="message-box">
+    <h3><%= user %></h3>
+    <div class="message-content">
+        <p>
+            <%= text%>
+        </p>
+    </div>
+    <% if (isDetailed) { %>
+        <span>
+            <%= added%>
+        </span>
+    <% } %>
+    <% if (!isDetailed) { %>
+        <a href=<%= `/message/${id}` %>> <button>Details</button></a>
+     
+    <% } %>
+</div>

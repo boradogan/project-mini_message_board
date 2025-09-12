@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message <%= id%></title>
+</head>
+<body>
+    <h1>Message Detail</h1>
+    <%- include('components/message', {id, user, text, added, isDetailed:true}) %>
+    <div class="back">
+        <a href="/"><button>Back</button></a>
+    </div>
+</body>
+</html>
